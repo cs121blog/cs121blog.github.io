@@ -21,24 +21,24 @@
   <meta name="author" content="百二一">
   <meta name="keywords" content="百二一,呼号121,个人博客,技术博客,rsreland,cs121,Hexo">
   
-    <meta name="description" content="在「注册表编辑器」中修改，以便在「此电脑」中隐藏7个无用文件夹。">
+    <meta name="description" content="通过注册表隐藏图标。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="从Windows的「此电脑」中删除「3D对象、视频、文档、图片、音乐、下载、桌面」">
-<meta property="og:url" content="https://cs121.top/blog/202405302033/index.html">
+<meta property="og:title" content="解决 WSL2 更新后桌面出现无法删除的 Linux 企鹅图标问题">
+<meta property="og:url" content="https://cs121.top/blog/202605091958/index.html">
 <meta property="og:site_name" content="呼号121">
-<meta property="og:description" content="在「注册表编辑器」中修改，以便在「此电脑」中隐藏7个无用文件夹。">
+<meta property="og:description" content="通过注册表隐藏图标。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img.50121.top/img/2024/05/240530_1.png">
-<meta property="article:published_time" content="2024-05-30T12:33:43.000Z">
-<meta property="article:modified_time" content="2026-05-09T12:59:24.217Z">
+<meta property="og:image" content="https://img.50121.top/img/2026/05/260509_1.jpg">
+<meta property="article:published_time" content="2026-05-09T11:58:06.000Z">
+<meta property="article:modified_time" content="2026-05-09T13:56:00.594Z">
 <meta property="article:author" content="百二一">
 <meta property="article:tag" content="系统">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://img.50121.top/img/2024/05/240530_1.png">
+<meta name="twitter:image" content="https://img.50121.top/img/2026/05/260509_1.jpg">
   
   
   
-  <title>从Windows的「此电脑」中删除「3D对象、视频、文档、图片、音乐、下载、桌面」 | 呼号121</title>
+  <title>解决 WSL2 更新后桌面出现无法删除的 Linux 企鹅图标问题 | 呼号121</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -437,7 +437,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="从Windows的「此电脑」中删除「3D对象、视频、文档、图片、音乐、下载、桌面」"></span>
+            <span id="subtitle" data-typed-text="解决 WSL2 更新后桌面出现无法删除的 Linux 企鹅图标问题"></span>
           
         </div>
 
@@ -448,8 +448,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-05-30 20:33" pubdate>
-          2024年5月30日 晚上
+        <time datetime="2026-05-09 19:58" pubdate>
+          2026年5月9日 晚上
         </time>
       </span>
     
@@ -460,7 +460,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.1k 字
+          1.2k 字
         
       </span>
     
@@ -471,7 +471,7 @@
         
         
         
-          18 分钟
+          10 分钟
         
       </span>
     
@@ -530,7 +530,7 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">从Windows的「此电脑」中删除「3D对象、视频、文档、图片、音乐、下载、桌面」</h1>
+            <h1 id="seo-header">解决 WSL2 更新后桌面出现无法删除的 Linux 企鹅图标问题</h1>
             
               <p id="updated-time" class="note note-info" style="">
                 
@@ -543,144 +543,57 @@
             
               <div class="markdown-body">
                 
-                <p><img src="https://img.50121.top/img/2024/05/240530_1.png" srcset="/img/loading.gif" lazyload></p>
-<p>　</p>
-<h1 id="基础环境"><a href="#基础环境" class="headerlink" title="基础环境"></a>基础环境</h1><ol>
-<li>操作系统：Windows 10</li>
-</ol>
+                <p><img src="https://img.50121.top/img/2026/05/260509_1.jpg" srcset="/img/loading.gif" lazyload></p>
+<h1 id="基础环境"><a href="#基础环境" class="headerlink" title="基础环境"></a>基础环境</h1><p>操作系统：Windows 10</p>
 <p>（虽然未测试，但Windows11应该也相似。）</p>
 <p>　</p>
-<h1 id="重现操作"><a href="#重现操作" class="headerlink" title="重现操作"></a>重现操作</h1><p><img src="https://img.50121.top/img/2024/05/240530_2.png" srcset="/img/loading.gif" lazyload></p>
-<p>在桌面找到「此电脑」，双击打开。</p>
-<p>备注：如果没有「此电脑」，则在桌面单击右键，在右键菜单中点击「个性化」。在打开的设置页面中的右侧，点击「主题」，再到右侧点击「桌面图标设置」。然后再打开的界面中，找到「计算机」选项，勾选上，最后点击确定。桌面就会显示「此电脑」了。</p>
+<h1 id="触发条件"><a href="#触发条件" class="headerlink" title="触发条件"></a>触发条件</h1><p>通过微软应用商店将 WSL（适用于 Linux 的 Windows 子系统）更新至 2.0 及以上版本。</p>
 <p>　</p>
-<h1 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h1><p><img src="https://img.50121.top/img/2024/05/240530_3.png" srcset="/img/loading.gif" lazyload></p>
-<p>如上图所示，红框中的就是要删除的7个文件夹，准确来说是隐藏。</p>
-<p>因为在这个界面中7个文件夹类似「快捷方式」，即使在这个界面中被删除，也不会影响原目录。</p>
+<h1 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h1><ol>
+<li>桌面突然出现一个带有 Linux 企鹅标志的图标，下方标注 “Linux”。</li>
+<li>右键点击该图标，菜单中<strong>没有 “删除” 或 “卸载” 选项。</strong></li>
+<li>双击打开后显示一个<strong>完全空白的文件夹。</strong></li>
+<li>无法通过拖拽到回收站的方式删除。</li>
+</ol>
 <p>　</p>
-<h1 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h1><p>大概微软认为用户有快速访问这7个目录的需求，所以一直留存了下来。</p>
+<h1 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h1><p>这不是系统 bug，也不是恶意软件，而是 <strong>WSL 2.0 及以上版本新增的官方功能</strong> ：</p>
+<ul>
+<li>该图标是 Windows 资源管理器的 “命名空间扩展”，属于系统级图标，而非普通快捷方式。</li>
+<li>它的设计目的是提供一个直观的入口，让用户在 Windows 文件管理器中无缝访问所有已安装的 Linux 发行版文件系统。</li>
+<li>打开后为空是因为你只更新了 WSL 运行平台本身，但 <strong>尚未安装任何具体的 Linux 发行版</strong> （如 Ubuntu、Debian、Fedora 等）。</li>
+</ul>
 <p>　</p>
-<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><h2 id="打开注册表编辑器"><a href="#打开注册表编辑器" class="headerlink" title="打开注册表编辑器"></a>打开注册表编辑器</h2><p><img src="https://img.50121.top/img/2024/05/240530_4.png" srcset="/img/loading.gif" lazyload></p>
-<p>按「win + r」键，打开运行，然后输入「regedit」，按回车（或点击确定）。</p>
-<p>备注：win键，在键盘上一般显示为 Windows 的图标，就是左下角那个有点变形的「田」键。</p>
+<h1 id="空文件夹的实际作用"><a href="#空文件夹的实际作用" class="headerlink" title="空文件夹的实际作用"></a>空文件夹的实际作用</h1><p>当你通过微软应用商店安装至少一个 Linux 发行版后，这个文件夹将不再为空，而是会显示所有已安装的 Linux 系统图标。进入后可以实现：</p>
+<ol>
+<li>直接读写 Linux 系统内的所有文件，操作体验与 Windows 本地文件完全一致。</li>
+<li>使用任意 Windows 程序（如 VS Code、画图、播放器）直接打开 Linux 文件。</li>
+<li>相比旧版通过 <code>\\wsl$\</code>地址访问的方式，文件传输速度更快，权限问题更少。</li>
+<li>Linux 系统仍可通过 <code>/mnt/c/</code>、<code>/mnt/d/</code>等路径访问 Windows 的各个磁盘分区。</li>
+</ol>
 <p>　</p>
-<p><img src="https://img.50121.top/img/2024/05/240530_5.png" srcset="/img/loading.gif" lazyload></p>
-<p>如果弹出了上图界面，直接选「是」。</p>
+<h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>通过注册表隐藏图标。此方法仅隐藏桌面图标， <strong>WSL 的所有功能完全不受影响</strong> ，未来想恢复时只需删除对应的注册表值即可。</p>
+<ol>
+<li>按下 <code>Win + R</code> 组合键，输入 <code>regedit</code> 并回车，打开注册表编辑器。<br><img src="https://img.50121.top/img/2026/05/260509_2.jpg" srcset="/img/loading.gif" lazyload></li>
+<li>在注册表顶部的地址栏中，直接粘贴以下路径并回车：<br><img src="https://img.50121.top/img/2026/05/260509_3.jpg" srcset="/img/loading.gif" lazyload></li>
+<li><code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel</code></li>
+<li>在右侧空白处右键，选择 <strong>新建 → DWORD (32 位) 值。</strong><br><img src="https://img.50121.top/img/2026/05/260509_4.jpg" srcset="/img/loading.gif" lazyload></li>
+<li>将新值<strong>精确命名</strong>为（包括花括号）：<br><img src="https://img.50121.top/img/2026/05/260509_5.jpg" srcset="/img/loading.gif" lazyload><br><code>{B2B4A4D1-2754-4140-A2EB-9A76D9D7CDC6}</code></li>
+<li>双击这个新建的值，将<strong>数值数据</strong>改为 <code>1</code>，基数保持为 “十六进制”。<br><img src="https://img.50121.top/img/2026/05/260509_6.jpg" srcset="/img/loading.gif" lazyload></li>
+<li>按下 <code>F5</code> 刷新桌面，Linux 企鹅图标会立即消失。</li>
+</ol>
 <p>　</p>
-<h2 id="备份注册表内容"><a href="#备份注册表内容" class="headerlink" title="备份注册表内容"></a>备份注册表内容</h2><p><img src="https://img.50121.top/img/2024/05/240530_6.png" srcset="/img/loading.gif" lazyload></p>
-<p>在注册表编辑器中，点击选中「HKEY_LOCAL_MACHINE」。</p>
-<p>备注：这是我们之后要操作的所有项目的最上级分支，一旦出了问题，只要使用这个备份，就可以还原成原始状态。</p>
-<p>　</p>
-<p><img src="https://img.50121.top/img/2024/05/240530_7.png" srcset="/img/loading.gif" lazyload></p>
-<p>在「HKEY_LOCAL_MACHINE」单击右键，在弹出的右键菜单中，点击「导出」。</p>
-<p>　</p>
-<p><img src="https://img.50121.top/img/2024/05/240530_8.png" srcset="/img/loading.gif" lazyload></p>
-<p>然后选择保存地点，只要是自己能找到的地方就行。</p>
-<p>然后输入一个文件名，建议如上图所示，用日期来命名。</p>
-<p>最后点击保存即可。</p>
-<p>　</p>
-<h2 id="修改注册表以隐藏文件夹"><a href="#修改注册表以隐藏文件夹" class="headerlink" title="修改注册表以隐藏文件夹"></a>修改注册表以隐藏文件夹</h2><p><img src="https://img.50121.top/img/2024/05/240530_9.png" srcset="/img/loading.gif" lazyload></p>
-<p>首先，依次打开「HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderDescriptions」这个路径。</p>
-<p>　</p>
-<table>
-<thead>
-<tr>
-<th>文件夹</th>
-<th>键值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>图片</td>
-<td>{0ddd015d-b06c-45d5-8c4c-f59713854639}</td>
-</tr>
-<tr>
-<td>视频</td>
-<td>{35286a68-3c57-41a1-bbb1-0eae73d76c95}</td>
-</tr>
-<tr>
-<td>下载</td>
-<td>{7d83ee9b-2244-4e70-b1f5-5393042af1e4}</td>
-</tr>
-<tr>
-<td>音乐</td>
-<td>{a0c69a99-21c8-4671-8703-7934162fcf1d}</td>
-</tr>
-<tr>
-<td>桌面</td>
-<td>{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}</td>
-</tr>
-<tr>
-<td>文档</td>
-<td>{f42ee2d3-909f-4907-8871-4c22fc0bf756}</td>
-</tr>
-</tbody></table>
-<p>在注册表中，「图片、视频、下载、音乐、桌面、文档」这6个文件夹的键值如上表所示。</p>
-<p>所有修改，都是要先肉眼寻找到上述与文件夹对应的键值，然后再对里面的值做更改。</p>
-<p>　</p>
-<p><img src="https://img.50121.top/img/2024/05/240530_10.png" srcset="/img/loading.gif" lazyload></p>
-<p>举例来说，我们来删除「图片」。</p>
-<p>如上图所示，找到与「图片」对应的「{0ddd015d-b06c-45d5-8c4c-f59713854639}」。</p>
-<p>点击它，可以在右侧看到「Name」的值是「Local Pictures」，这就是「图片」的英文名，说明我们找对了。</p>
-<p>　</p>
-<p><img src="https://img.50121.top/img/2024/05/240530_11.png" srcset="/img/loading.gif" lazyload></p>
-<p>点击「&gt;」符号，展开「{0ddd015d-b06c-45d5-8c4c-f59713854639}」。</p>
-<p>然后点击「PropertyBag」，在右侧可以找到「ThisPCPolicy」，这就是我们将要修改的。</p>
-<p>　</p>
-<p><img src="https://img.50121.top/img/2024/05/240530_12.png" srcset="/img/loading.gif" lazyload></p>
-<p>双击「ThisPCPolicy」，在弹出的对话框中，可以看到数值是「Show」。</p>
-<p>现在我们将它改成「Hide」，然后点击确定。</p>
-<p>这样就全部操作完成了，「图片」已经从「此电脑」中被删除了。</p>
-<p>除「桌面」外，只需重复上述操作，就可以将「视频、下载、音乐、桌面、文档」从「此电脑」中删除了。</p>
-<p>　</p>
-<h2 id="第一个特例「桌面」"><a href="#第一个特例「桌面」" class="headerlink" title="第一个特例「桌面」"></a>第一个特例「桌面」</h2><p><img src="https://img.50121.top/img/2024/05/240530_13.png" srcset="/img/loading.gif" lazyload></p>
-<p>「桌面」有点特殊，「{B4BFCC3A-DB2C-424C-B029-7FE99A87C641}」的「PropertyBag」中，没有「ThisPCPolicy」。</p>
-<p>所以我们要自己创建一个「ThisPCPolicy」。</p>
-<p>　</p>
-<p><img src="https://img.50121.top/img/2024/05/240530_14.png" srcset="/img/loading.gif" lazyload></p>
-<p>在右侧空白的地方，单击右键，在点击「新建」中的「字符串值」。</p>
-<p>　</p>
-<p><img src="https://img.50121.top/img/2024/05/240530_15.png" srcset="/img/loading.gif" lazyload></p>
-<p>如上图所示，创建了一个叫「新值 #1」的项。</p>
-<p>我们将「新值 #1」改名成「ThisPCPolicy」。</p>
-<p>　</p>
-<p><img src="https://img.50121.top/img/2024/05/240530_16.png" srcset="/img/loading.gif" lazyload></p>
-<p>之后的操作就如同「图片」了，将「ThisPCPolicy」的数值改成「Hide」即可。</p>
-<p>　</p>
-<h2 id="第二个特例「3D对象」"><a href="#第二个特例「3D对象」" class="headerlink" title="第二个特例「3D对象」"></a>第二个特例「3D对象」</h2><p><img src="https://img.50121.top/img/2024/05/240530_17.png" srcset="/img/loading.gif" lazyload></p>
-<p>「3D对象」更特殊一些，我们需要打开「HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MyComputer\NameSpace」这个路径。</p>
-<p>　</p>
-<table>
-<thead>
-<tr>
-<th>文件夹</th>
-<th>键值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>3D对象</td>
-<td>{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}</td>
-</tr>
-</tbody></table>
-<p>上表即是「3D对象」对应的键值，只需要直接把它删除，即可。</p>
-<p>　</p>
-<p><img src="https://img.50121.top/img/2024/05/240530_18.png" srcset="/img/loading.gif" lazyload></p>
-<p>找到「{0DB7E03F-FC29-4DC6-9020-FF41B59E513A}」，单击右键，再点击「删除」。</p>
-<p>　</p>
-<p><img src="https://img.50121.top/img/2024/05/240530_19.png" srcset="/img/loading.gif" lazyload></p>
-<p>会弹出确认框，直接点击「是」即可。</p>
-<p>　</p>
-<h1 id="结果测试"><a href="#结果测试" class="headerlink" title="结果测试"></a>结果测试</h1><p><img src="https://img.50121.top/img/2024/05/240530_20.png" srcset="/img/loading.gif" lazyload></p>
-<p>全部修改完成，再次打开「此电脑」，可以看到「3D对象、图片、视频、下载、音乐、桌面、文档」已经消失不见了。</p>
+<h1 id="结果测试"><a href="#结果测试" class="headerlink" title="结果测试"></a>结果测试</h1><p>按下 F5 刷新桌面后，Linux 图标立即消失。</p>
 <p>　</p>
 <h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ol>
-<li>操作前，请先备份注册表。（如果出现问题，双击备份文件，即可恢复如初。）</li>
-<li>注册表是区分字母大小写的，所以一定要写正确。</li>
+<li><strong>修改注册表有风险</strong> ，操作前务必备份注册表：在注册表编辑器中选择 “文件 → 导出”，保存备份文件。若出现问题，双击备份文件即可恢复。</li>
+<li>此问题是微软 WSL 2.0 版本的设计行为，未来版本可能会增加开关选项。</li>
+<li>不要尝试通过删除系统文件或使用第三方清理工具来删除该图标，可能会导致系统不稳定。</li>
 </ol>
 <p>　</p>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ol>
-<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/420408197">https://zhuanlan.zhihu.com/p/420408197</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv24898579">https://www.bilibili.com/read/cv24898579</a></li>
-</ol>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li>豆包</li>
+<li>微软 WSL 官方文档</li>
+</ul>
 <p>　</p>
 <p>　</p>
 
@@ -746,8 +659,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>从Windows的「此电脑」中删除「3D对象、视频、文档、图片、音乐、下载、桌面」</div>
-      <div>https://cs121.top/blog/202405302033/</div>
+      <div>解决 WSL2 更新后桌面出现无法删除的 Linux 企鹅图标问题</div>
+      <div>https://cs121.top/blog/202605091958/</div>
     </div>
     <div class="license-meta">
       
@@ -759,7 +672,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年5月30日</div>
+          <div>2026年5月9日</div>
         </div>
       
       
@@ -803,18 +716,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/blog/202406021351/" title="【干了啥】5月第5周：蜗之壳匣之少女、《满庭芳：宋上繁华》">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">【干了啥】5月第5周：蜗之壳匣之少女、《满庭芳：宋上繁华》</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/blog/202405261858/" title="【干了啥】5月第4周：电风扇选购、《异能缉凶》">
-                        <span class="hidden-mobile">【干了啥】5月第4周：电风扇选购、《异能缉凶》</span>
+                      <a href="/blog/202605032052/" title="【干了啥】4月第5周：Z-Anime对比、《丧尸镇》AI短片">
+                        <span class="hidden-mobile">【干了啥】4月第5周：Z-Anime对比、《丧尸镇》AI短片</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -871,7 +778,9 @@
                 <h5><b>= 相关文章 =</b></h5>
                 <ul>
                 
-                        <li><a href="/blog/202605091958/">解决 WSL2 更新后桌面出现无法删除的 Linux 企鹅图标问题</a></li>
+                        <li><a href="/blog/202405302033/">从Windows的「此电脑」中删除「3D对象、视频、文档、图片、音乐、下载、桌面」</a></li>
+                        
+                        <li><a href="/blog/202002291151/">在Emacs中用ediff比较文件时出错的解决方法</a></li>
                         
                 </ul>
             </section>
