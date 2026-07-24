@@ -115,40 +115,7 @@
   
 
   <header>
-    <!-- 域名更换公告 - 全站顶部固定显示（z-index最高，绝对不会被任何元素遮挡） -->
-<div id="domain-notice" style="
-  background: #ff4d4f;
-  color: #fff;
-  padding: 12px 20px;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999999; /* 比导航栏高1000倍，绝对在最上层 */
-  width: 100%;
-  box-sizing: border-box;
-  line-height: 1.6;
-">
-  ⚠️ 重要通知：本站域名已从 <u>https://rsreland.net</u> 更换为 <u>https://cs121.top</u> 。
-  <br>请立即更新书签，原域名已过期随时可能无法访问！
-</div>
-<!-- 全局样式：把导航栏和页面内容整体往下推75px -->
-<style>
-  /* 强制把导航栏移到公告下方 */
-  .navbar, .nav, .header-nav, #nav, nav {
-    top: 75px !important;
-    z-index: 99999 !important; /* 比公告低一级 */
-  }
-  
-  /* 给整个页面加上边距，防止内容被导航栏挡住 */
-  body {
-    padding-top: 125px !important; /* 75px(公告高度) + 50px(导航栏高度) */
-  }
-</style>
-
-
+    
 
 <div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
