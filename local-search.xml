@@ -4,6 +4,39 @@
   
   
   <entry>
+    <title>【干了啥】9月第1周：Transformer、llama.cpp</title>
+    <link href="/blog/202609062109/"/>
+    <url>/blog/202609062109/</url>
+    
+    <content type="html"><![CDATA[<p>9月第1周（31-6日），主要干了以下事情。</p><h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><h2 id="スパイダー・アスナ"><a href="#スパイダー・アスナ" class="headerlink" title="スパイダー・アスナ"></a>スパイダー・アスナ</h2><p><img src="https://img.50121.top/img/2026/09/260906_1.jpg"></p><p>原图：<a href="https://img.50121.top/img/2026/09/260906_2.jpg">https://img.50121.top/img/2026/09/260906_2.jpg</a></p><p>Pixiv：149119161</p><p>　</p><h2 id="水着スカサハ"><a href="#水着スカサハ" class="headerlink" title="水着スカサハ"></a>水着スカサハ</h2><p><img src="https://img.50121.top/img/2026/09/260906_3.jpg"></p><p>原图：<a href="https://img.50121.top/img/2026/09/260906_4.jpg">https://img.50121.top/img/2026/09/260906_4.jpg</a></p><p>Pixiv：149124475</p><p>　</p><h2 id="🎀"><a href="#🎀" class="headerlink" title="🎀"></a>🎀</h2><p><img src="https://img.50121.top/img/2026/09/260906_5.jpg"></p><p>原图：<a href="https://img.50121.top/img/2026/09/260906_6.jpg">https://img.50121.top/img/2026/09/260906_6.jpg</a></p><p>Pixiv：149221070</p><p>　</p><h2 id="メランコリック・パジャマライフ"><a href="#メランコリック・パジャマライフ" class="headerlink" title="メランコリック・パジャマライフ"></a>メランコリック・パジャマライフ</h2><p><img src="https://img.50121.top/img/2026/09/260906_7.jpg"></p><p>原图：<a href="https://img.50121.top/img/2026/09/260906_8.jpg">https://img.50121.top/img/2026/09/260906_8.jpg</a></p><p>Pixiv：149278529</p><p>　</p><h2 id="Shigure"><a href="#Shigure" class="headerlink" title="Shigure"></a>Shigure</h2><p><img src="https://img.50121.top/img/2026/09/260906_9.jpg"></p><p>原图：<a href="https://img.50121.top/img/2026/09/260906_10.png">https://img.50121.top/img/2026/09/260906_10.png</a></p><p>Pixiv：149365133</p><p>　</p><h2 id="アリスとケイ（コミケ限定）"><a href="#アリスとケイ（コミケ限定）" class="headerlink" title="アリスとケイ（コミケ限定）"></a>アリスとケイ（コミケ限定）</h2><p><img src="https://img.50121.top/img/2026/09/260906_11.jpg"></p><p>原图：<a href="https://img.50121.top/img/2026/09/260906_12.jpg">https://img.50121.top/img/2026/09/260906_12.jpg</a></p><p>Pixiv：149365325</p><p>　</p><p>　</p><h1 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h1><h2 id="只要我有火，这台电脑就能运行-PickentCode-中配"><a href="#只要我有火，这台电脑就能运行-PickentCode-中配" class="headerlink" title="只要我有火，这台电脑就能运行 - PickentCode - 中配"></a>只要我有火，这台电脑就能运行 - PickentCode - 中配</h2><iframe width="720" height="480" src="https://player.bilibili.com/player.html?isOutside=true&aid=117175213886180&bvid=BV1t3tK6TE8x&cid=41377466230&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe><wbr><p>bilibili：<a href="https://www.bilibili.com/video/BV1t3tK6TE8x">https://www.bilibili.com/video/BV1t3tK6TE8x</a></p><p>　</p><h2 id="消费上不去，根源竟在财政央地博弈？税改怎破消费困局"><a href="#消费上不去，根源竟在财政央地博弈？税改怎破消费困局" class="headerlink" title="消费上不去，根源竟在财政央地博弈？税改怎破消费困局"></a>消费上不去，根源竟在财政央地博弈？税改怎破消费困局</h2><iframe width="720" height="480" src="https://player.bilibili.com/player.html?isOutside=true&aid=117190095280836&bvid=BV1bRtb6KE5A&cid=41462468414&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe><wbr><p>bilibili：<a href="https://www.bilibili.com/video/BV1bRtb6KE5A">https://www.bilibili.com/video/BV1bRtb6KE5A</a></p><p>　</p><h2 id="Transformer到底是个啥？一个动画彻底搞懂"><a href="#Transformer到底是个啥？一个动画彻底搞懂" class="headerlink" title="Transformer到底是个啥？一个动画彻底搞懂"></a>Transformer到底是个啥？一个动画彻底搞懂</h2><iframe width="720" height="480" src="https://player.bilibili.com/player.html?isOutside=true&aid=117190380489963&bvid=BV1Pyta66EDh&cid=41466987682&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe><wbr><p>bilibili：<a href="https://www.bilibili.com/video/BV1Pyta66EDh">https://www.bilibili.com/video/BV1Pyta66EDh</a></p><p>　</p><h2 id="为什么你几乎不可能当上教皇"><a href="#为什么你几乎不可能当上教皇" class="headerlink" title="为什么你几乎不可能当上教皇"></a>为什么你几乎不可能当上教皇</h2><iframe width="720" height="480" src="https://player.bilibili.com/player.html?isOutside=true&aid=116698086643228&bvid=BV1eM7y64EP3&cid=38888211486&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe><p>bilibili：<a href="https://www.bilibili.com/video/BV1eM7y64EP3">https://www.bilibili.com/video/BV1eM7y64EP3</a></p><p>　</p><h2 id="llama-cpp的文件都有哪些功能-一个视频带你详细了解清楚"><a href="#llama-cpp的文件都有哪些功能-一个视频带你详细了解清楚" class="headerlink" title="llama.cpp的文件都有哪些功能?一个视频带你详细了解清楚"></a>llama.cpp的文件都有哪些功能?一个视频带你详细了解清楚</h2><iframe width="720" height="480" src="https://player.bilibili.com/player.html?isOutside=true&aid=116431932884911&bvid=BV1PXdfB7EY1&cid=37644273274&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe><wbr><p>bilibili：<a href="https://www.bilibili.com/video/BV1PXdfB7EY1">https://www.bilibili.com/video/BV1PXdfB7EY1</a></p><p>　</p><h2 id="开源-psd一键生成live2d工程。psd2live"><a href="#开源-psd一键生成live2d工程。psd2live" class="headerlink" title="[开源]psd一键生成live2d工程。psd2live"></a>[开源]psd一键生成live2d工程。psd2live</h2><iframe width="720" height="480" src="https://player.bilibili.com/player.html?isOutside=true&aid=117206503592207&bvid=BV17utZ6hE64&cid=41548777619&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe><wbr><p>bilibili：<a href="https://www.bilibili.com/video/BV17utZ6hE64">https://www.bilibili.com/video/BV17utZ6hE64</a></p><p>　</p><h2 id="郭海皇cos"><a href="#郭海皇cos" class="headerlink" title="郭海皇cos"></a>郭海皇cos</h2><iframe width="720" height="480" src="https://player.bilibili.com/player.html?isOutside=true&aid=117211989810160&bvid=BV188tz6wEPL&cid=41577349668&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe><wbr><p>bilibili：<a href="https://www.bilibili.com/video/BV188tz6wEPL">https://www.bilibili.com/video/BV188tz6wEPL</a></p><p>　</p><p>　</p><h1 id="说点啥"><a href="#说点啥" class="headerlink" title="说点啥"></a>说点啥</h1><p>可以拔空调插销了。</p><p>　</p><p>　</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>笔记</category>
+      
+      <category>周报</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>干了啥</tag>
+      
+      <tag>第1周</tag>
+      
+      <tag>9月</tag>
+      
+      <tag>2026年</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>【干了啥】8月第4周：金瓶掣签、橡皮筋计算机</title>
     <link href="/blog/202608301245/"/>
     <url>/blog/202608301245/</url>
