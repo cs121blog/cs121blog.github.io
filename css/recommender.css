@@ -1,0 +1,219 @@
+/* ===== 文章推荐卡片 hexo-article-recommender ===== */
+/* 默认为白天模式配色，暗色模式见文件末尾 [data-user-color-scheme="dark"] 区段 */
+
+.hexo-article-recommender-section {
+  margin: 3rem 0 1rem;
+}
+
+/* 分隔标题："推荐文章"（两侧都有线，文字居中） */
+.hexo-article-recommender-section-divider {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.hexo-article-recommender-divider-line {
+  flex: 1;
+  height: 1px;
+  background: #eaecef;
+}
+.hexo-article-recommender-divider-text {
+  padding: 0 1rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #3c4858;
+  white-space: nowrap;
+}
+
+/* 卡片网格：手机 1 列，平板 2 列，桌面 4 列 */
+.hexo-article-recommender-posts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 992px) {
+  .hexo-article-recommender-posts { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 576px) {
+  .hexo-article-recommender-posts { grid-template-columns: 1fr; }
+}
+
+/* 单张卡片 */
+.hexo-article-recommender-post-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #f8f9fa;
+  border: 1px solid #eaecef;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+.hexo-article-recommender-post-card:hover {
+  transform: translateY(-4px);
+  border-color: #30a9de;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* 左上角 "站内" 标签 */
+.hexo-article-recommender-site-tag {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  font-size: 0.72rem;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: #718096;
+  background: #eef1f4;
+}
+
+/* 右上角 相关度/推荐 标签 */
+.hexo-article-recommender-relation-tag {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  font-size: 0.72rem;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+.hexo-article-recommender-relation-tag.related {
+  color: #3d8f40;
+  background: rgba(127, 191, 108, 0.18);
+}
+.hexo-article-recommender-relation-tag.fallback {
+  color: #b07a2a;
+  background: rgba(224, 168, 96, 0.18);
+}
+.hexo-article-recommender-score {
+  opacity: 0.7;
+  margin-left: 2px;
+}
+
+/* 阅读时长（给顶部标签腾出空间） */
+.hexo-article-recommender-card-header {
+  margin-top: 2rem;
+}
+.hexo-article-recommender-reading-time {
+  font-size: 0.78rem;
+  color: #718096;
+}
+.hexo-article-recommender-reading-time i {
+  margin-right: 4px;
+}
+
+/* 标题与摘要 */
+.hexo-article-recommender-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+.hexo-article-recommender-post-title {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+.hexo-article-recommender-post-title a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+.hexo-article-recommender-post-title a:hover {
+  color: #30a9de;
+}
+.hexo-article-recommender-post-excerpt {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #718096;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 底部作者区 */
+.hexo-article-recommender-author {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  padding-top: 0.75rem;
+  border-top: 1px solid #eaecef;
+}
+.hexo-article-recommender-author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(3, 102, 214, 0.12);
+  color: #0366d6;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.6rem;
+  flex-shrink: 0;
+}
+.hexo-article-recommender-author-name {
+  font-size: 0.82rem;
+  color: #3c4858;
+}
+.hexo-article-recommender-author-title {
+  font-size: 0.72rem;
+  color: #718096;
+}
+
+/* ===== 暗色模式覆盖 ===== */
+html[data-user-color-scheme="dark"] .hexo-article-recommender-divider-line {
+  background: rgba(255, 255, 255, 0.12);
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-divider-text {
+  color: #d6dee7;
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-post-card {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-post-card:hover {
+  border-color: rgba(122, 168, 255, 0.55);
+  background: rgba(255, 255, 255, 0.07);
+  box-shadow: none;
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-site-tag {
+  color: #aebfd6;
+  background: rgba(255, 255, 255, 0.08);
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-relation-tag.related {
+  color: #8fc97e;
+  background: rgba(127, 191, 108, 0.14);
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-relation-tag.fallback {
+  color: #e0b073;
+  background: rgba(224, 168, 96, 0.14);
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-reading-time {
+  color: #8a97a6;
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-post-title a {
+  color: #d6dee7;
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-post-title a:hover {
+  color: #7aa8ff;
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-post-excerpt {
+  color: #9aa7b5;
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-author {
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-author-avatar {
+  background: rgba(122, 168, 255, 0.18);
+  color: #7aa8ff;
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-author-name {
+  color: #c5cdd7;
+}
+html[data-user-color-scheme="dark"] .hexo-article-recommender-author-title {
+  color: #8a97a6;
+}

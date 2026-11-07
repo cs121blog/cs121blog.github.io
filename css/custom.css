@@ -1,0 +1,16 @@
+/* 全站黑白悼念模式 */
+html {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1); /* IE 兼容 */
+  -webkit-filter: grayscale(1);
+}
+
+/* 部分浏览器中 filter 在 html 上不生效时，对 body 再次兜底 */
+body {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
